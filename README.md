@@ -11,6 +11,8 @@ As the player grows, they can eventually dominate the sea and win the game.
 
 👉 Watch the gameplay here: https://www.youtube.com/watch?v=QGZUfuFPFiE
 
+---
+
 ## Gameplay
 
 - Control a fish and move freely through the ocean  
