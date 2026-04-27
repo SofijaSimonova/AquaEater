@@ -51,11 +51,13 @@ There are 4 types of special fish:
 ---
 
 ## Project Structure
+```
 AquaEater/
 ├── main.py
 ├── assets/ # images and sounds
 └── data/
 └── high_score.txt
+```
 
 
 ---
