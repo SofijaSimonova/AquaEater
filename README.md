@@ -7,7 +7,7 @@ As the player grows, they can eventually dominate the sea and win the game.
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
 
 - Control a fish and move freely through the ocean  
 - Eat smaller fish to grow  
@@ -18,7 +18,7 @@ Special **booster fish** occasionally appear, providing temporary abilities.
 
 ---
 
-## ⚡ Booster System
+## Booster System
 
 There are 4 types of special fish:
 
@@ -32,7 +32,7 @@ There are 4 types of special fish:
 
 ---
 
-## 🧠 Features
+## Features
 
 - Fish selection system (unlockable skins based on high score)  
 - Dynamic enemy fish with different sizes and speeds  
@@ -43,11 +43,38 @@ There are 4 types of special fish:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python  
 - **Library:** Pygame  
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+AquaEater/
+├── main.py
+├── assets/ # images and sounds
+└── data/
+└── high_score.txt
+
+
+---
+
+## Sound Effects
+
+- `eat.wav` – played when eating a fish  
+- `victory.wav` – played on win  
+- `game_over.wav` – played on defeat  
+
+---
+
+## High Score System
+
+The game stores the highest score in:
+-data/high_score.txt
+
+## Run the game:
+```bash
+python main.py
+```
+
