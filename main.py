@@ -170,7 +170,8 @@ def game_over_screen(score):
                 return
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r:
-                    main()  # Рестарт
+                    main() 
+            
                     return
                 elif event.key == pygame.K_q:
                     waiting = False
@@ -334,15 +335,15 @@ def main():
             game_over_screen(score)
             return
 
-        # Појавување на непријателски риби
+    
         if random.random() < 0.005:
             enemies_fish.append(Enemy_Fish())
 
-        # Појавување на booster риби
+    
         if random.random() < 0.0002:
             boosters.append(Booster_Fish())
 
-        # Движење и цртање непријателски риби
+
         for enemy in enemies_fish[:]:
             enemy.move()
             enemy.draw()
@@ -381,7 +382,6 @@ def main():
                             victory_screen(score)
                             return
 
-        # Движење и цртање booster риби
         for booster in boosters[:]:
             booster.move()
             booster.draw()
@@ -392,7 +392,7 @@ def main():
                 pygame.Rect(booster.x, booster.y, booster.size, booster.size))
 
             if collision:
-                # Играчот може да изеде booster само ако нема активен ефект
+        
                 if main_fish.mode == "":
                     if booster.name == "armor_fish":
                         main_fish.change_skin("assets/fish_modes/armored.png")
